@@ -1,0 +1,10 @@
+@media(max-width:500px){
+   .cards .card{
+     width: 5rem;
+     height: 8rem;
+     }
+ 
+     .back-btn {
+          font-size: 0.8rem;
+        }
+ }

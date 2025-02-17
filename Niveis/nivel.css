@@ -1,0 +1,100 @@
+/* Estilos globais */
+html,body {
+    background: url(../IMG/sukCard.jpg) center / cover no-repeat fixed;
+    padding: 0;
+    margin: 0;
+    background-position: center 35%;
+}
+
+.levels-interface__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 29vh;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw; /* Garante que ocupe toda a largura da tela */
+    min-width: 100%; /* Evita que fique menor */
+    box-sizing: border-box; /* Evita que padding afete a largura */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+
+.levels-interface__header h1 {
+    font-weight: 900;
+    color: #38b6ff;
+    font-size: clamp(2.5rem, 8vw, 8.6rem); /* Tamanho responsivo */
+    text-align: center; /* Centraliza o texto */
+}
+
+
+.levels-interface__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+.levels-interface__navigation .levels-container {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.levels-interface__navigation .levels-container .level-wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+
+.levels-interface__navigation .levels-container .level-wrapper  .level-button {
+    text-decoration: none;
+    width: 400px;
+    height: 100px;
+    color: white;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.levels-interface__navigation .levels-container .easy .level-button {
+    background: #f29a93;
+}
+
+.levels-interface__navigation .levels-container .medium .level-button {
+    background: #b7343c;
+}
+
+.levels-interface__navigation .levels-container .hard .level-button {
+    background: #682e3f;
+}
+
+.levels-interface__navigation .levels-container .level-wrapper img {
+    width: 7rem;
+    height: auto;
+    mix-blend-mode: lighten;
+}
+
+/* Hover Effects */
+.levels-interface__navigation .levels-container .level-wrapper:hover .level-button {
+    background-image: url(../IMG/chama.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}

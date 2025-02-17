@@ -1,0 +1,133 @@
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../IMG/sukCard.jpg) center / cover no-repeat fixed;
+    background-position: center 35%;
+    opacity: 0.8; /* Ajuste o nível de opacidade (0.0 a 1.0) */
+    z-index: -1; /* Mantém a imagem no fundo */
+}
+
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2rem;
+    color: white;
+    background-color: #38b6ff;
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.back-btn:hover {
+    background-color: #2a96d1;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    font-size: clamp(4rem, 8vw, 5rem);
+    min-height: 12vh;
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+}
+
+header img {
+    width: clamp(50px, 10vw, 100px);
+    height: auto;
+    mix-blend-mode: lighten;
+}
+
+
+header h1 {
+    font-weight: 900;
+    font-size: clamp(2rem, 10vw, 5rem);
+    color: #38b6ff;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4rem;
+    width: 35%;
+    max-width: 800px;
+    justify-content: center; /* Centraliza os itens no eixo horizontal */
+    align-items: center; /* Centraliza no eixo vertical */
+    margin: auto; /* Centraliza o grid na tela */
+    padding: 2rem 0;
+    top: 0;
+}
+
+
+.cards .card {
+    perspective: 1000px;
+    width: 5.9rem;
+    height: 6.9rem;
+    box-sizing: border-box;
+}
+
+.cards .card .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+
+.cards .card .card-inner .card-front,
+.card-back {
+    position: absolute;
+    width: 100%;  /* Garante que tenham o mesmo tamanho */
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;  /* Isso evita que as imagens se deformem */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards .card .card-inner .card-front img,
+.card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Evita distorção das imagens */
+}
+
+
+.cards .card .card-inner .card-back {
+    transform: rotateY(180deg);
+}
+
+
+ .flipped {
+    transform: rotateY(180deg);
+}
+
