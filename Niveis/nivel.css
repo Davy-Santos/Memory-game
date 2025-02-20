@@ -11,6 +11,7 @@ html, body {
 .levels-interface__header {
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     min-height: 29vh;
     font-weight: 900;
