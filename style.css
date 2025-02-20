@@ -1,37 +1,38 @@
-body {
-    background: url(IMG/sukCard.jpg) center 35% / cover no-repeat fixed;
+html, body {
+    background: url(../IMG/sukCard.jpg) center 35% / cover no-repeat fixed;
     margin: 0;
-    padding: 0;
-    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-screen__header {
-    position: relative;
-    padding: 0 10px;
-    white-space: nowrap;
-    font-size: clamp(4rem, 8vw, 8.6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 29vh;
-    text-align: center;
-    font-weight: 900;
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
-    top: 4vh;
+    font-weight: 900;
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
 }
 
-.home-screen__header .T1, .T2 {
+.home-screen__header .T1, 
+.home-screen__header .T2 {
     position: absolute;
-    margin: 0;
-    left: 10%;
     font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(3.5rem, 8vw, 8.6rem);
+    text-align: center;
 }
 
 .home-screen__header .T1 {
     z-index: 1;
     background: url("IMG/chama.gif") repeat;
     background-size: 300% 300%;
-    background-position: center;
-    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     opacity: 0.2;
 }
@@ -44,12 +45,11 @@ body {
 .home-screen__start-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
     margin-top: 50vh;
 }
 
-.home-screen__start-container img{
+.home-screen__start-container img {
     width: clamp(4rem, 5vw, 60pt);
     height: auto;
     mix-blend-mode: lighten;
@@ -63,7 +63,6 @@ body {
 .home-screen__start-container a {
     font-size: clamp(4rem, 5vw, 60pt);
     font-weight: bold;
-    text-align: center;
     animation: blink 2s infinite;
     text-decoration: none;
     color: #38b6ff;
