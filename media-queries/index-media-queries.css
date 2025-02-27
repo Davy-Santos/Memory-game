@@ -1,1 +1,8 @@
+@media(max-width:500px){
+  .home-screen__header .T2 {
+    color: #38b6ff;
+    text-shadow: 2px 0px black;
+}
+  }
 
+  
