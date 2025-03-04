@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardBackImages = document.querySelectorAll(".card-back img");
     let flippedCards = [];
     let matchedPairs = 0;
+    let attempts = 0;
 
     const storedImages = localStorage.getItem("shuffledImages");
     
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             if (flippedCards.length === 2) {
+                attempts++;
                 const [firstCard, secondCard] = flippedCards;
                 const firstImage = firstCard.querySelector(".card-back img").src;
                 const secondImage = secondCard.querySelector(".card-back img").src;
@@ -48,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             victoryMessage.classList.add("victory-message");
                             victoryMessage.innerHTML = `
                                 <h1>🎉 Você Venceu! 🎉</h1>
-                                <p>Parabéns! Você completou o desafio com sucesso.</p>
+                                <p>Parabéns! Você completou o desafio com ${attempts} tentativas.</p>
                             `;
                             document.body.appendChild(victoryMessage);
                         }, 500);
