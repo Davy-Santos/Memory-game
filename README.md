@@ -6,7 +6,7 @@
 
 ## 🎮 Como Jogar
 
-1. Abra o arquivo `index.html` em um navegador.
+1. Acesse o link do projeto (https://davy-santos.github.io/Memory-game/).
 2. Escolha um nível de dificuldade.
 3. Encontre todos os pares de cartas iguais para vencer o jogo!
 
