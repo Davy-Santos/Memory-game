@@ -1,0 +1,22 @@
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+## 🎮 Como Jogar
+
+1. Abra o arquivo `index.html` em um navegador.
+2. Escolha um nível de dificuldade.
+3. Encontre todos os pares de cartas iguais para vencer o jogo!
+
+## 📌 Observações
+
+- O projeto roda 100% localmente, sem necessidade de backend.
+- Ideal para aprendizado e demonstração de projetos front-end.
+
+## 🧑‍💻 Autor
+
+Desenvolvido por **Davy Alexandre de Oliveira Santos** – [@seu-usuario](https://github.com/seu-usuario](https://github.com/Davy-Santos).  
+Sinta-se livre para contribuir, reportar issues ou sugerir melhorias!
+
