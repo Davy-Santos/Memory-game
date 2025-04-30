@@ -6,7 +6,7 @@
 
 ## 🎮 Como Jogar
 
-1. Acesse o link do projeto (https://davy-santos.github.io/Memory-game/).
+1. Acesse o link do projeto (https://davy-santos.github.io/Memory-game/) e dê start.
 2. Escolha um nível de dificuldade.
 3. Encontre todos os pares de cartas iguais para vencer o jogo!
 
@@ -17,6 +17,6 @@
 
 ## 🧑‍💻 Autor
 
-Desenvolvido por **Davy Alexandre de Oliveira Santos** – [Davy-Santos](https://github.com/Davy-Santos).  
+Desenvolvido por **Davy Alexandre de Oliveira Santos** – [Davy-Santos] (https://github.com/Davy-Santos).  
 Sinta-se livre para contribuir, reportar issues ou sugerir melhorias!
 
