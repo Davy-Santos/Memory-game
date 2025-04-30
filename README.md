@@ -17,6 +17,6 @@
 
 ## 🧑‍💻 Autor
 
-Desenvolvido por **Davy Alexandre de Oliveira Santos** – [Davy-Santos](https://github.com/seu-usuario](https://github.com/Davy-Santos).  
+Desenvolvido por **Davy Alexandre de Oliveira Santos** – [Davy-Santos](https://github.com/Davy-Santos).  
 Sinta-se livre para contribuir, reportar issues ou sugerir melhorias!
 
