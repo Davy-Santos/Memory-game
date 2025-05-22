@@ -1,5 +1,5 @@
 html,body {
-    background: url(../IMG/sukCard.jpg) center / cover no-repeat fixed;
+    background: var(--bg--image) center / cover no-repeat fixed;
     padding: 0 ;
     margin: 0;
     background-position: center 35%;
@@ -30,7 +30,6 @@ html,body {
 
 .levels-interface__header h1 {
     font-weight: 900;
-    color: #38b6ff;
     font-size: clamp(3.5rem, 8vw, 8.6rem); /* Tamanho responsivo */
     text-align: center; /* Centraliza o texto */
     color: var(--letters--color);

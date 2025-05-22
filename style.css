@@ -24,7 +24,6 @@ html, body {
 .home-screen__header .T1, .T2 {
     position: absolute;
     font-weight: 900;
-    color: #38b6ff;
     color: var(--letters--color);
     font-size: clamp(2.5rem, 10vw, 8.6rem); /* Reduz o tamanho para telas menores */
     text-align: center;
@@ -34,7 +33,7 @@ html, body {
 
 .home-screen__header .T1 {
     z-index: 1;
-    background: url("IMG/chama.gif") repeat;
+    background: var(--gif) repeat;
     background-size: 300% 300%;
     background-position: center;
     -webkit-background-clip: text;
@@ -44,7 +43,6 @@ html, body {
 }
 
 .home-screen__header .T2 {
-    color: #38b6ff;
     color: var(--letters--color);
     text-shadow: 6px 0px black;
 }
@@ -74,6 +72,5 @@ html, body {
     text-align: center;
     animation: blink 2s infinite;
     text-decoration: none;
-    color: #38b6ff;
     color: var(--letters--color);
 }
