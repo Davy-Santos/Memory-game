@@ -4,24 +4,18 @@ html,body {
     margin: 0;
     background-position: center 35%;
     display: flex;
-<<<<<<< HEAD
     justify-content: center;
     align-items: center;
-=======
     width: 100vw;
     height: 100vh;
->>>>>>> a2e1dc4 (Criando variaveis css)
 }
 
 .levels-interface__header {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     min-height: 29vh;
-=======
     height: 22vh;
->>>>>>> a2e1dc4 (Criando variaveis css)
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw; /* Garante que ocupe toda a largura da tela */
@@ -36,15 +30,11 @@ html,body {
 
 .levels-interface__header h1 {
     font-weight: 900;
-<<<<<<< HEAD
     color: #38b6ff;
     font-size: clamp(3.5rem, 8vw, 8.6rem); /* Tamanho responsivo */
     text-align: center; /* Centraliza o texto */
-=======
     color: var(--letters--color);
     font-size: clamp(3.5rem, 8vw, 8.6rem); /* Tamanho responsivo */
-
->>>>>>> a2e1dc4 (Criando variaveis css)
 }
 
 

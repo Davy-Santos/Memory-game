@@ -1,15 +1,11 @@
 @media(max-width:500px){
   .cards .card{
     width: 6rem;
-<<<<<<< HEAD
     height: 9rem;
-=======
     height: 7rem;
->>>>>>> a2e1dc4 (Criando variaveis css)
     }
 
     .back-btn {
-        
         font-size: 0.8rem;
 }
 }
