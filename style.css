@@ -1,5 +1,4 @@
 html, body {
-    background: url(./IMG/sukCard.jpg) center / cover no-repeat fixed;
     background: var(--bg--image) center / cover no-repeat fixed;
     padding: 0;
     margin: 0;
