@@ -1,5 +1,9 @@
 html, body {
+<<<<<<< HEAD
     background: url(./IMG/sukCard.jpg) center / cover no-repeat fixed;
+=======
+    background: var(--bg--image) center / cover no-repeat fixed;
+>>>>>>> a2e1dc4 (Criando variaveis css)
     padding: 0;
     margin: 0;
     background-position: center 35%;
@@ -24,7 +28,11 @@ html, body {
 .home-screen__header .T1, .T2 {
     position: absolute;
     font-weight: 900;
+<<<<<<< HEAD
     color: #38b6ff;
+=======
+    color: var(--letters--color);
+>>>>>>> a2e1dc4 (Criando variaveis css)
     font-size: clamp(2.5rem, 10vw, 8.6rem); /* Reduz o tamanho para telas menores */
     text-align: center;
     white-space:  nowrap;
@@ -43,7 +51,11 @@ html, body {
 }
 
 .home-screen__header .T2 {
+<<<<<<< HEAD
     color: #38b6ff;
+=======
+    color: var(--letters--color);
+>>>>>>> a2e1dc4 (Criando variaveis css)
     text-shadow: 6px 0px black;
 }
 
@@ -72,5 +84,9 @@ html, body {
     text-align: center;
     animation: blink 2s infinite;
     text-decoration: none;
+<<<<<<< HEAD
     color: #38b6ff;
+=======
+    color: var(--letters--color);
+>>>>>>> a2e1dc4 (Criando variaveis css)
 }

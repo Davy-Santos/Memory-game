@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Redireciona para index.html ao recarregar a página
+  
     if (performance.navigation.type === 1) {
         window.location.href = "../index.html";
     }
