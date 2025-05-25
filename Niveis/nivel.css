@@ -3,9 +3,8 @@ html,body {
     padding: 0 ;
     margin: 0;
     background-position: center 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -14,26 +13,22 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 29vh;
     height: 22vh;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
     width: 100vw; /* Garante que ocupe toda a largura da tela */
-    min-width: 100%; /* Evita que fique menor */
     box-sizing: border-box; /* Evita que padding afete a largura */
-    margin: 0;
+    margin: auto;
     padding: 0;
-    left: 0;
-    right: 0; 
 }
 
 
 .levels-interface__header h1 {
     font-weight: 900;
     font-size: clamp(3.5rem, 8vw, 8.6rem); /* Tamanho responsivo */
-    text-align: center; /* Centraliza o texto */
     color: var(--letters--color);
-    font-size: clamp(3.5rem, 8vw, 8.6rem); /* Tamanho responsivo */
+    text-align: center;
+    
 }
 
 
