@@ -1,95 +1,103 @@
-html,body {
-    background: var(--bg--image) center / cover no-repeat fixed;
-    padding: 0 ;
+/* ======= Reset e Base ======= */
+html, body {
     margin: 0;
-    background-position: center 35%;
-    display: grid;
-    place-items: center;
+    padding: 0;
     width: 100vw;
     height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--bg--image) center 35% / cover no-repeat fixed;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ======= Estrutura Principal ======= */
+.levels-interface {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ======= Cabeçalho ======= */
 .levels-interface__header {
+    width: 100%;
+    text-align: center;
+    height: 22vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 22vh;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100vw; /* Garante que ocupe toda a largura da tela */
-    box-sizing: border-box; /* Evita que padding afete a largura */
-    margin: auto;
-    padding: 0;
 }
-
 
 .levels-interface__header h1 {
+    font-size: clamp(3.5rem, 8vw, 8.6rem);
     font-weight: 900;
-    font-size: clamp(3.5rem, 8vw, 8.6rem); /* Tamanho responsivo */
     color: var(--letters--color);
-    text-align: center;
-    
+    margin: 0;
 }
 
-
+/* ======= Navegação ======= */
 .levels-interface__navigation {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    flex-direction: column;
 }
 
-.levels-interface__navigation .levels-container {
+.levels-container {
     display: grid;
-    gap: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    border-radius: 15px;
-    margin: auto;
+    gap: 2rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    justify-items: center;
 }
 
-.levels-interface__navigation .levels-container .level-wrapper {
+/* ======= Wrapper de cada nível ======= */
+.level-wrapper {
     display: flex;
     align-items: center;
-    
+    gap: 1rem;
 }
 
-.levels-interface__navigation .levels-container .level-wrapper  .level-button {
-    text-decoration: none;
+/* ======= Botão base ======= */
+.level-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 90px;
-    color: white;
-    border-radius: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
     font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 4%;
+    transition: background 0.3s ease;
 }
 
-.levels-interface__navigation .levels-container .easy .level-button {
+/* ======= Cores por nível ======= */
+.level-wrapper.easy .level-button {
     background: #f29a93;
 }
 
-.levels-interface__navigation .levels-container .medium .level-button {
+.level-wrapper.medium .level-button {
     background: #b7343c;
 }
 
-.levels-interface__navigation .levels-container .hard .level-button {
+.level-wrapper.hard .level-button {
     background: #682e3f;
 }
 
-.levels-interface__navigation .levels-container .level-wrapper img {
+/* ======= Imagem decorativa ======= */
+.level-wrapper img {
     width: 6rem;
     height: auto;
     mix-blend-mode: lighten;
 }
 
-/* Hover Effects */
-.levels-interface__navigation .levels-container .level-wrapper:hover .level-button {
+/* ======= Efeito de hover ======= */
+.level-wrapper:hover .level-button {
     background-image: var(--gif);
     background-size: cover;
     background-position: center;
